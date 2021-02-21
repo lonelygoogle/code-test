@@ -79,12 +79,12 @@ MyPromise.prototype = {
 
 // console.log(p1)
 
-let s1 = new Promise((resolve) => {
-    resolve('原版成功')
-})
+// let s1 = new Promise((resolve) => {
+//     resolve('原版成功')
+// })
 let s2 = new MyPromise((resolve) => {
     resolve('自己版本成功')
 })
 
-console.log(s1)
+// console.log(s1)
 console.log(s2)
