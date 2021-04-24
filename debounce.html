@@ -6,21 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="黄思沁自己写call_apply_bind.js"></script>
+  <script src="防抖和节流.js"></script>
 
 </head>
 <body>
   <input id='input'></input>
 </body>
 <script>
-  // function log() {
-  //   console.log('this', this)
-  //   console.log('log after stop moving')
-  // }
-  // function print (e) {
-  //   console.log(e.target.value)
-  // }
-  // // document.addEventListener('mousemove', log)
+  function log() {
+    console.log('this', this)
+    console.log('log after stop moving')
+  }
+  function print (e) {
+    console.log(e.target.value)
+  }
+  // document.addEventListener('mousemove', log)
+  document.addEventListener('mousemove', debounce(log, 500))
   // let input = document.querySelector('#input')
   // input.addEventListener('input', debounce(print, 500) )
 </script>
